@@ -1,81 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <title>Crypto Card</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard Internet</title>
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-    }
-
     body {
-      background: linear-gradient(to bottom right, #eee, #ccc);
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #e6f4fb;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 800px;
+      padding: 30px;
     }
-
-    .card {
-      background: linear-gradient(to bottom right, #6f3fe0, #9a66ff);
-      color: white;
-      border-radius: 20px;
-      padding: 32px;
-      width: 350px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    }
-
-    .card-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 24px;
-    }
-
-    .crypto-logo {
-      background: #00c6ff;
-      color: white;
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-      font-size: 20px;
-    }
-
-    .card-title {
-      font-size: 20px;
-      font-weight: bold;
-    }
-
-    .card-price {
-      font-size: 36px;
-      font-weight: bold;
-    }
-
-    .card-footer {
-      margin-top: 16px;
-      font-size: 14px;
-      background: rgba(255, 255, 255, 0.1);
-      padding: 8px;
+    .dashboard {
+      background: #fff;
+      border: 4px solid #c4e3f3;
       border-radius: 10px;
-      text-align: center;
+      display: flex;
+      width: 900px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .info-panel {
+      padding: 20px;
+      flex: 1;
+    }
+    .info-panel h1 {
+      color: #008be8;
+      margin: 0;
+    }
+    .info-panel h2 {
+      font-size: 18px;
+      margin-top: 5px;
+      color: #444;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    td {
+      border: 1px solid #ccc;
+      padding: 8px;
+    }
+    .note {
+      color: #777;
+      font-size: 12px;
+      margin-bottom: 15px;
+    }
+    .logout-btn {
+      background: #818181;
+      color: white;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .image-panel {
+      flex: 1;
+      background: #d4f24b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .image-panel img {
+      max-width: 120px;
+    }
+    .image-panel h3 {
+      color: white;
+      margin-top: 10px;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <div class="card-header">
-      <div class="card-title">Bitcoin</div>
-      <div class="crypto-logo">p</div>
+  <div class="dashboard">
+    <div class="info-panel">
+      <h1>Selamat Datang!</h1>
+      <h2>azzam</h2>
+      <table>
+        <tr><td>IP</td><td>111.111.11</td></tr>
+        <tr><td>MAC</td><td>entah la</td></tr>
+        <tr><td>Aktif</td><td>24 jam</td></tr>
+        <tr><td>Traffic</td><td><strong>UL</strong> 000 MiB | <strong>DL</strong> 0000 MiB</td></tr>
+        <tr><td>Kuota</td><td>unlimited GB</td></tr>
+      </table>
+      <p class="note">Tombol logout dapat menghentikan akses internet</p>
+      <button class="logout-btn">LOGOUT</button>
     </div>
-    <div class="card-price">unlimited</div>
-    <div class="card-footer">+buahahaha</div>
+    <div class="image-panel">
+      <div>
+        <img src="https://media.licdn.com/dms/image/v2/C560BAQHy-H_yZ6gpzg/company-logo_200_200/company-logo_200_200/0/1630639048751?e=2147483647&v=beta&t=2qEzVMwnHZ6MJi4rGenOLqUKCoFryjUJTbgd0FWqQ5g" alt="SINTESA" />
+        <h3>SINTESA</h3>
+      </div>
+    </div>
   </div>
 </body>
 </html>
